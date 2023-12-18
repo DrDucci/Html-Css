@@ -1,0 +1,25 @@
+body {
+    animation: example 7s infinite;
+    background-color: gray;
+    box-shadow: 10px 10px 50px rgb(0, 0, 0);
+    padding: 2rem;
+    width: 50%;
+    margin-inline: auto;
+  }
+  h1 {
+  }
+  h2 {
+  }
+  p {
+  }
+  p1{
+    
+  }
+
+@keyframes example {
+  0% {background-color: red;}
+  25% {background-color: yellow;}
+  50% {background-color: orange;}
+  75% {background-color: rgb(52, 255, 52);}
+  100% {background-color: red;}
+}

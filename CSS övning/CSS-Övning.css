@@ -1,0 +1,41 @@
+*{
+	outline:1px dotted red;
+}
+body {
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	
+}
+.pink {
+	/*Looks*/
+	background-color: pink;
+	/*Placement*/
+	position: absolute;
+	height: 50%;
+	width: 50%;
+	left: 0%;
+	top: 50%;
+}
+.blue {
+	/*Looks*/
+	background-color: lightblue;
+	/*Placement*/
+	position: absolute;
+	height: 25%;
+	width: 25%;
+	left: 50%;
+	top: 25%;
+	
+	
+}
+.yellow {
+	/*Looks*/
+	background-color: lightyellow;
+	/*Placement*/
+	position: absolute;
+	height: 12.5%;
+	width: 25%;
+	top: 12.5%;
+	left: 25%;
+}

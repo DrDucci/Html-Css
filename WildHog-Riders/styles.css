@@ -1,0 +1,247 @@
+:root {
+    --text: #c5c5c5;
+    --background: #f9f3e6;
+    --primary: rgb(157, 81, 39);
+    --secondary: #e6d8b7;
+    --accent: #d59707;
+}
+
+* {
+    --outline: 1px solid red;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+header, footer {
+    position: fixed;
+    z-index: 1;
+    height: 10vh;
+    width: 100%;
+    left: 0;
+    background-color: var(--primary);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+header button {
+    padding: 10px;
+    border-radius: 10px;
+    border: groove 2px rgb(121, 90, 74);
+    text-decoration: none;
+    font-size: 2.5vh;
+    color: var(--text);
+    transition: all 0.3s ease;
+    font-family: 'Bevan', serif;
+}
+
+header button:hover {
+    color: var(--accent);
+    font-size: 3vh;
+    transform: scale(1.001);
+}
+
+main {
+    height: 100%;
+    overflow-y: hidden;
+    background: url("background.jpg") no-repeat center / cover;
+}
+
+#maincover {
+    display: flex;
+    align-items: center;
+    width: 400vh;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+#landingpage {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 4vw;
+    height: 100%;
+    width: 100%;
+}
+
+article {
+    height: 75vh;
+    width: 196vw;
+    border-radius: 2%;
+    backdrop-filter: blur(6px);
+}
+
+#landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vh;
+    background-color: rgba(79, 117, 74, 0.9);
+}
+
+#landing img {
+    height: 50%;
+}
+
+.rubik {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 16vh;
+    width: 20vw;
+    gap: -10vh;
+    margin: 1vh;
+}
+
+.rubik h1 {
+    font-size: 7vh;
+    margin: 0px;
+    font-family: 'Bevan', serif;
+}
+
+.rubik h2 {
+    font-size: 4vh;
+    margin: 0px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.citat h3 {
+    text-align: center;
+    font-size: 3vh;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding-bottom: 5vh;
+}
+
+#om-oss {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(82, 51, 23, 0.9);
+}
+
+#textruta1 {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+#textruta1 * {
+    text-align: justify;
+}
+
+#textruta1 h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 5vh;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.719);
+}
+
+#textruta1 p {
+    font-family: 'EB Garamond', serif;
+    font-size: 2vh;
+    font-weight: bold;
+    padding: 2vh;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 1vh;
+}
+
+#textruta1 img {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+#bilder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#bilder div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2vh;
+}
+
+#bilder div:hover {
+    transform: scale(1.1);
+}
+
+#kontakt {
+}
+
+#shop {
+    display: flex;
+    align-items: center;
+    background-color: rgba(46, 90, 32, 0.9);
+}
+
+#items {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vh;
+    width: 100%;
+}
+
+#items img {
+    width: 10vw;
+    height: 20vh;
+    border-radius: 10px;
+}
+
+#items div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10vw;
+    height: 30vh;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.397);
+    text-align: justify;
+    transition: all 0.3s ease;
+}
+
+#items div:hover {
+    transform: scale(1.05);
+}
+
+#items div h2 {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: small;
+}
+
+#items div p {
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: x-small;
+}

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildhogs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=EB+Garamond&family=Kanit:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+
+    :root{
+        --text: #c5c5c5;
+        --background: #f9f3e6;
+        --primary: rgb(157, 81, 39);
+        --secondary: #e6d8b7;
+        --accent: #d59707;
+        /*
+        font-family: 'Bevan', serif;
+        font-family: 'EB Garamond', serif;
+        font-family: 'Kanit', sans-serif;
+        
+        */
+
+    }
+
+    *{
+        --outline: 1px solid red;
+    }
+    
+    body{
+        padding: 0;
+        margin: 0;
+        height: 100vh; 
+
+    }
+
+
+
+    header, footer{ 
+        position: fixed;
+        z-index: 1;    
+        height: 10vh;
+        width: 100%;
+        left: 0;
+        background-color: var(--primary);
+        outline: var(--outline_color) solid 2px;
+        background-image: url(https://lh3.googleusercontent.com/pw/ADCreHffsJ_giudBpZIb7D-Xjffcf2Wa6MT2T6zUFih_z28Mgz-t_AP9UYuURNIr8qYI8YDJKAgKgGu1MERJA5WcVb9GZuo_bxKyw6O3uObG13DqRfM8rTk_04AQaK1bJG499biJ4BOaY9i5RPoXwh3WeiCn=w1716-h965-s-no-gm?authuser=0);
+    }
+
+    header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+
+    top: 0;
+    
+    }
+
+    footer {
+
+        bottom: 0;
+        
+    }
+
+    header button{
+    background-image: url(https://lh3.googleusercontent.com/pw/ADCreHdcbxWxptA3vyr5N738zWzjHDO9CqI-nmzza3aBeH8gC9iLioG9fYXQFzW_hRMM7NhTPeeabQCM4S-CzqLe8eDxYxBc4UKwOydEPyveQImMNeLmFO5GHdsUF-_nb_B5Wx8bvVDzZ6r048Y6iyNObrLx=w1685-h948-s-no-gm?authuser=0);
+    padding: 10px;
+    border-radius: 10px;
+    border: groove 2px rgb(121, 90, 74);
+    text-decoration: none;
+    font-size: 2.5vh;
+    color: var(--text);
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease;
+    font-family: 'Bevan', serif;
+    }
+
+    header button:hover{
+    color: var(--accent);
+    font-size: 3vh;
+    transform: scale(1.001);
+    }
+
+
+
+    
+    
+main{
+    height: 100%;
+    overflow-y:hidden;
+
+    background-image: url('https://cdn.discordapp.com/attachments/816962071554949181/1177652984583294996/f28ceee4_f7f3_41d9_8f07_bf0796608548_80d9b26e7a.png?ex=657349cf&is=6560d4cf&hm=bbd1762437766c7c8335cabb5a2137025b71bf180f18bc21d0975d410155151c&');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#maincover{
+    
+    display: flex;
+    align-items: center;
+
+    width: 400vh;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-left: 7vw;
+    padding-right: 7vw;
+    }
+    
+    
+
+    
+
+#landingpage{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 4vw;
+
+    height: 100%;
+    width: 100%;
+    }
+
+article{
+
+    height: 75vh;
+    width: 196vw;
+    
+    border-radius: 2%;
+
+    backdrop-filter:blur(6px);
+
+    
+    }
+
+#landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vh;
+    background-color: rgba(79, 117, 74, 0.9)
+    }
+
+#landing img{
+    height:50%;
+}
+
+
+
+.rubik{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height: 16vh;
+    width: 20vw;
+    gap: -10vh;
+    margin: 1vh;
+    }
+.rubik *{
+    
+}
+.rubik h1{
+    font-size: 7vh;
+    margin: 0px;
+    font-family: 'Bevan', serif;
+}
+.rubik h2{
+    font-size: 4vh;
+    margin: 0px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.citat h3{
+    text-align: center;
+    font-size: 3vh;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding-bottom: 5vh;
+    
+    }
+
+
+#om-oss{
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(82, 51, 23, 0.9)
+    }
+
+#textruta1{
+    display: flex;
+    flex-direction: column;
+
+    height: 50%;
+    }
+
+#textruta1 *{
+    text-align: justify;
+    
+}
+
+#textruta1 h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 5vh;
+    margin: 0;
+    color:rgba(255, 255, 255, 0.719);
+    }
+
+#textruta1 p{
+    font-family: 'EB Garamond', serif;
+    font-size: 2vh;
+    font-weight: bold;
+    padding: 2vh;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius:1vh;
+}
+
+#textruta1 img{
+    width: 30vh;
+    height: 30vh;
+    border-radius: 10px;
+ 
+    }
+
+#bilder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    }
+
+#bilder div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-size:2vh;
+    }
+
+#bilder div:hover{
+    transform: scale(1.1);
+    }
+
+
+#kontakt{
+    }
+
+
+
+
+
+#shop{
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(46, 90, 32, 0.9)
+    
+    }
+
+#items{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vh;
+
+    width: 100%;
+    }
+
+#items img{
+    width: 10vw;
+    height: 20vh;
+
+    border-radius: 10px;
+    }
+
+#items div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 10vw;
+    height: 30vh;
+    border-radius: 10px;
+    padding: 0.5rem;
+
+    background-color: rgba(255, 255, 255, 0.397);
+    text-align: justify;
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease;
+}
+
+#items div:hover{
+    transform: scale(1.05);
+}
+
+#items div h2{
+    margin: 0;
+    
+    font-family: 'Kanit', sans-serif;
+    font-size: small;
+
+    }
+
+#items div p{
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: x-small;
+
+    }
+    
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <button href="#">Om oss</button>
+        <button href="#">Meny</button>
+        <button href="#">Merch</button>
+        <button href="#">Kontakta oss</button>
+        
+    </header>
+    
+    <main>
+        <div id="maincover">
+            <div id="landingpage">
+                <article id="landing">
+                    <img src="https://lh3.googleusercontent.com/pw/ADCreHcWOg49VQEWe1B4fNqLarSW2eiGr77RO4gSlYvVGzkYxqcDblvPwosh8KzIHaBjHOsAVjdir3qQG5-gWAG08bOuI338wk8i0Kt6WCIsvS8ifg7ZSgomPUgbFH99dK1t_cNs8mN_TUuHWbrdM8MpnkWd=w965-h965-s-no-gm?authuser=0" alt="Wildhogs logo">
+                    
+                    <div class="rubik">
+                        <h2>Vi är</h2>
+                        <h1>Wildhogs</H1>
+                    </div>
+
+                    <div class="citat">
+                        <h3>En smak av frihet, en nypa av vildsvin<br> och allt mellan himmel och asfalt!</h3>
+                    </div>
+                </article>
+                
+                <article id="om-oss">
+                    <div id="textruta1">
+                        <h1>Om oss</h1>
+                        <p>Vi, gänget Wildhogs, älskar äventyr i naturen. Våra möten sker på avlägsna platser, omringade av vildmarkslandskap, där vi delar skratt och historier runt en brasa. Med vår förkärlek för vildsvinsorienterad mat skapar vi kulinariska upplevelser i det fria. Vår passion för motorcyklar tar oss på slingrande vägar genom skogar och över bergspass, där frihetskänslan på två hjul är central. Wildhogs samlas för kamratskap, god mat och oförglömliga äventyr i det vilda.</p>
+
+                        <div id="bilder">
+                        <div id="bild1"><img id="Gryta" src="https://cdn.discordapp.com/attachments/816962071554949181/1177339782402158763/image.png?ex=6572261e&is=655fb11e&hm=abb736b3464956663a43d800bd273d8920360f4191ff3ab552ba8a729e27959b&" alt="Gryta">Vildsvinsgryta ute i naturen</div>
+                        <div><img src="https://cdn.discordapp.com/attachments/816962071554949181/1177340705371340921/image.png?ex=657226fa&is=655fb1fa&hm=44b0a4d7b937a727b69b4edd63d4a81ce003e8edb29e9657d6ec68a7d65910f7&" alt="Stek">Vildsvinsstek</div>
+                        <div><img src="https://cdn.discordapp.com/attachments/816962071554949181/1177325895564939405/image.png?ex=6572192f&is=655fa42f&hm=0839e889e25c3321136328bb1c0437d2ccf5767c3a5dd754075470837de77d0d&" alt="Soppa">Vildsvinssoppa</div>
+                        </div>
+                    </div>
+                    
+                </article>
+                    
+                <article id="shop">
+                    <div id="items">
+                        <div id="buy1">
+                            <img src="https://cdn.discordapp.com/attachments/816962071554949181/1177340705371340921/image.png?ex=657226fa&is=655fb1fa&hm=44b0a4d7b937a727b69b4edd63d4a81ce003e8edb29e9657d6ec68a7d65910f7&" alt="Stek">
+                            <h2>Något xxKR</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, cumque.</p>
+                        </div>
+
+                        <div id="buy2">
+                            <img src="https://cdn.discordapp.com/attachments/816962071554949181/1177340705371340921/image.png?ex=657226fa&is=655fb1fa&hm=44b0a4d7b937a727b69b4edd63d4a81ce003e8edb29e9657d6ec68a7d65910f7&" alt="Stek">
+                            <h2>Något xxKR</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, cumque.</p>
+                        </div>
+
+                        <div id="buy3">
+                            <img src="https://cdn.discordapp.com/attachments/816962071554949181/1177325895564939405/image.png?ex=6572192f&is=655fa42f&hm=0839e889e25c3321136328bb1c0437d2ccf5767c3a5dd754075470837de77d0d&" alt="Soppa">
+                            <h2>Något xxKR</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, cumque.</p>
+                        </div>
+
+                        <div id="buy4">
+                            <img src="https://cdn.discordapp.com/attachments/816962071554949181/1177340705371340921/image.png?ex=657226fa&is=655fb1fa&hm=44b0a4d7b937a727b69b4edd63d4a81ce003e8edb29e9657d6ec68a7d65910f7&" alt="Stek">
+                            <h2>Något xxKR</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, cumque.</p>
+                        </div>
+
+                        <div id="buy5">
+                            <img src="https://cdn.discordapp.com/attachments/816962071554949181/1177340705371340921/image.png?ex=657226fa&is=655fb1fa&hm=44b0a4d7b937a727b69b4edd63d4a81ce003e8edb29e9657d6ec68a7d65910f7&" alt="Stek">
+                            <h2>Något xxKR</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, cumque.</p>
+                        </div>
+
+                        <div id="buy6">
+                            <img src="https://cdn.discordapp.com/attachments/816962071554949181/1177340705371340921/image.png?ex=657226fa&is=655fb1fa&hm=44b0a4d7b937a727b69b4edd63d4a81ce003e8edb29e9657d6ec68a7d65910f7&" alt="Stek">
+                                <h2>Något xxKR</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, cumque.</p>
+                        </div>
+
+                        <div id="buy7">
+                            <img src="https://cdn.discordapp.com/attachments/816962071554949181/1177340705371340921/image.png?ex=657226fa&is=655fb1fa&hm=44b0a4d7b937a727b69b4edd63d4a81ce003e8edb29e9657d6ec68a7d65910f7&" alt="Stek">
+                            <h2>Något xxKR</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, cumque.</p>
+                        </div>
+
+                        <div id="buy8">
+                            <img src="https://cdn.discordapp.com/attachments/816962071554949181/1177340705371340921/image.png?ex=657226fa&is=655fb1fa&hm=44b0a4d7b937a727b69b4edd63d4a81ce003e8edb29e9657d6ec68a7d65910f7&" alt="Stek">
+                            <h2>Något xxKR</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, cumque.</p>
+                        </div>
+
+
+                    </div>
+
+
+
+                </article>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer>
+    </footer>
+</body>
+</html>
+<script>
+    const scrollContainer = document.querySelector("main");
+
+scrollContainer.addEventListener("wheel", (evt) => {
+evt.preventDefault();
+scrollContainer.scrollLeft += evt.deltaY;
+});
+</script>

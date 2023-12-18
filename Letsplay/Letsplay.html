@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Letsplay.css">
+</head>
+<body>
+    <!--iframe src="https://youtu.be/dJGS9q-LJJY?si=Gc2jJxhlfpxvs_N3"
+    frameborder="0" allowfullscreen></iframe-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dJGS9q-LJJY?si=Gc2jJxhlfpxvs_N3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div id="kameraruta">
+        <button id="startBtn" onclick="openCam()">Starta Webcam</button>
+        <video id="videoCam"></video>
+    </div>
+
+    <div id="bandicam">
+        <img src="https://pbs.twimg.com/media/FG7LXy9UUAA_vTm.png" alt="">
+    </div>
+
+
+
+<script>
+    function openCam(){
+        let All_mediaDevices=navigator.mediaDevices
+        if (!All_mediaDevices || !All_mediaDevices.getUserMedia) {
+           console.log("getUserMedia() not supported.");
+           return;
+        }
+        All_mediaDevices.getUserMedia({
+           audio: true,
+           video: true
+        })
+        .then(function(vidStream) {
+           var video = document.getElementById('videoCam');
+           if ("srcObject" in video) {
+              video.srcObject = vidStream;
+           } else {
+              video.src = window.URL.createObjectURL(vidStream);
+           }
+           video.onloadedmetadata = function(e) {
+              video.play();
+           };
+        })
+        .catch(function(e) {
+           console.log(e.name + ": " + e.message);
+        });
+
+        $(document).keypress(function(e) {
+        return false;
+        });
+     }
+</script>
+</body>
+</html>
